@@ -2,10 +2,11 @@
   "name": "backend1",
   "version": "1.0.0",
   "description": "a basic app to deploy",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "dev": "nodemon  src/index.js"
   },
   "keywords": [
     "node"
@@ -15,5 +16,8 @@
   "dependencies": {
     "dotenv": "^16.4.1",
     "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.3"
   }
 }
